@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset("css/app.css") }}">
+    <link rel="stylesheet" href="{{ asset("fonts/fontawesome/css/all.css") }}">
 </head>
 <body dir="rtl" class="font-yekan">
     <main class="bg-gray-background w-full h-100">
@@ -21,16 +22,16 @@
                 </div>
             </div>
             <div class="w-2/12 flex flex-wrap content-center">
-                <div class="w-full">
-                    <span class="bg-custom-orange text-white py-3 px-4 rounded-r-lg ml-0 text-xs">icon</span>
-                    <button class="bg-custom-red text-white py-3 px-4 rounded-l-lg mr-0 text-xs">
+                <div>
+                    <button class="bg-custom-red text-white w-48 rounded-lg mr-0 pl-6 text-xs flex flex-row-reverse justify-between items-center">
                         @lang("layout.header.login_button")
+                        <span class="bg-custom-orange text-white w-12 block py-3 px-4 rounded-r-lg ml-2 text-xs "><i class="fas fa-user text-base"></i></span>
                     </button>
                 </div>
-                <div class="mt-2 w-full">
-                    <span class="bg-custom-orange text-white py-3 px-4 rounded-r-lg text-xs">icon</span>
-                    <button class="bg-custom-red text-white  py-3 px-4 rounded-l-lg mr-0 text-xs">
-                        @lang("layout.header.basket_button") <span class="bg-white rounded-full text-black py-1 px-3">3</span>
+                <div class="mt-2">
+                    <button class="bg-custom-red text-white w-48  pl-3 rounded-lg mr-0 text-xs flex flex-row-reverse justify-between items-center">
+                        @lang("layout.header.basket_button") 
+                        <span class="bg-custom-orange text-white w-12 block py-3 px-4 rounded-r-lg ml-2 text-xs "><i class="fas fa-cart-arrow-down text-base"></i></span>
                     </button>
                 </div>
             </div>
