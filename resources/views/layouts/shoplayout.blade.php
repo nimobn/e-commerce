@@ -30,8 +30,9 @@
                 </div>
                 <div class="mt-2">
                     <button class="bg-custom-red text-white w-48  pl-3 rounded-lg mr-0 text-xs flex flex-row-reverse justify-between items-center">
+                        <span class="rounded-full bg-white text-custom-red font-yekan py-1 text-center font-bold px-2">3</span>
                         @lang("layout.header.basket_button") 
-                        <span class="bg-custom-orange text-white w-12 block py-3 px-4 rounded-r-lg ml-2 text-xs "><i class="fas fa-cart-arrow-down text-base"></i></span>
+                        <span class="bg-custom-orange text-white w-12 block py-3 px-4 rounded-r-lg ml-2 text-xs "><i class="far fa-cart-arrow-down text-base"></i></span>
                     </button>
                 </div>
             </div>
