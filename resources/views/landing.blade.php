@@ -16,7 +16,7 @@
             </div>
         </li>
         <li class="li-navbar  flex group flex-col-reverse items-center justify-between cursor-pointer">
-            <div class="py-2 text-xs font-bold text-gray-600 border-l border-gray-200 px-6 cursor-pointer">
+            <div class="py-2 text-xs font-bold text-gray-600 px-6 cursor-pointer">
                 <i class="fas fa-info-circle"></i>
                 @lang("layout.header.buy-guide")
             </div>
