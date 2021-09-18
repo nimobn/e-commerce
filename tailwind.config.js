@@ -27,7 +27,9 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      width: ['hover','group-hover', 'focus'],
+    },
   },
   plugins: [
     require("tailwindcss-rtl"),
