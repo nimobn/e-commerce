@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('layouts.head')
+    @include('partials.head')
     <title>@yield('title')</title>
 </head>
 <body dir="rtl" class="font-yekan">
     <main class="bg-gray-background w-full h-100">
-        @include('layouts.header')
+        @include('partials.header')
         @yield('content')
-        @include('layouts.footer')
+        @include('partials.footer')
     </main>
 </body>
 </html>
