@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LandingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.shoplayout');
-});
+// Route::get('/', function () {
+//     return view('layouts.shoplayout');
+// });
+Route::get('/', [LandingController::class, 'index'])->name('landing');
+
