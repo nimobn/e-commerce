@@ -29,3 +29,48 @@
     width: 0px;
   }
   
+  .owl-theme .owl-nav{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+  }
+
+  .owl-theme .owl-dots, .owl-theme .owl-nav{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+  }
+
+  .owl-theme .owl-nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.owl-prev:hover {
+  background: transparent !important;
+}
+.owl-next {
+  background: transparent !important;
+}
+.owl-prev i,.owl-next i {
+  color: #696969 !important;
+}
+.owl-prev i:hover,.owl-next i:hover {
+  color: #ffffff !important;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span{
+  background:#269270;
+}
+.owl-next, .owl-prev {
+  font-size: 2rem !important;
+}
+.owl-theme .owl-dots .owl-dot span{
+  margin: 5px 3px;
+}
