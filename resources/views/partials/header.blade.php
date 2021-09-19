@@ -3,7 +3,7 @@
         <div class="w-3/6 mx-auto mt-3">
             <img src="{{ asset('images/logo.jpg') }}" alt="" class="w-1/2 mx-auto">
         </div>
-        <div class="w-3/6 mx-auto pb-2 text-sm">فروشگاه اینترنتی</div>
+        <div class="w-3/6 mx-auto pt-2 text-sm">فروشگاه اینترنتی</div>
     </div>
     <div class="w-8/12 relative">
         <div class="w-6/12 mx-auto mt-2 relative">

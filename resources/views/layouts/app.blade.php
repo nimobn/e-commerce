@@ -5,7 +5,7 @@
     <title>@yield('title')</title>
 </head>
 <body dir="rtl" class="font-yekan">
-    <main class="bg-gray-background w-full h-100">
+    <main class="bg-gray-background w-full">
         @include('partials.header')
         @yield('content')
         @include('partials.footer')
