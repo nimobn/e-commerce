@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     @include('partials.head')
+    @yield('head')
     <title>@yield('title')</title>
 </head>
 <body dir="rtl" class="font-yekan">
@@ -10,5 +11,6 @@
         @yield('content')
         @include('partials.footer')
     </main>
+    @yield('script')
 </body>
 </html>
