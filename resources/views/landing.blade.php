@@ -70,6 +70,28 @@
 </div>
 {{-- End of Slider --}}
 
+<div class="hidden sm:flex justify-around sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl mx-auto py-5 shadow-md bg-white rounded-md mb-10 ">
+    <span class="flex justify-center items-center">
+        <img src="images/svg/product-ribbon/badge.svg" width="70" height="70" alt="">
+        <span class="font-yekan font-bold text-gray-600 mr-1">@lang("layout.ribbon.percent")</span>
+    </span>
+    <span class="flex justify-center items-center">
+        <img src="images/svg/product-ribbon/clock.svg" width="70" height="70" alt=""> 
+        <span class="font-yekan font-bold text-gray-600 mr-4">@lang("layout.ribbon.delivery")</span>
+    </span>
+    <span class="flex justify-center items-center">
+        <img src="images/svg/product-ribbon/delivery.svg" width="70" height="70" alt=""> 
+        <span class="font-yekan font-bold text-gray-600 mr-4">@lang("layout.ribbon.free")</span>
+    </span>
+    <span class="flex justify-center items-center">
+        <img src="images/svg/product-ribbon/shield.svg" width="70" height="70" alt=""> 
+        <span class="font-yekan font-bold text-gray-600 mr-4">@lang("layout.ribbon.warranty")</span>
+    </span>
+</div>
+
+
+
+
 @endsection
 
 @section('script')
