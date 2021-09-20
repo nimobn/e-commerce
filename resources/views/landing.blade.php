@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="{{ asset("css/style.css") }}">
 @endsection
 @section('navigation-menu')
-<div class="absolute bottom-0 pr-10">
+<div class="absolute bottom-0 pr-10 z-10">
     <ul class="flex">
         <li class="li-navbar  flex group flex-col-reverse items-center justify-between cursor-pointer">
             <div class="group py-2 text-xs font-bold text-custom-black border-l border-gray-200 px-6 cursor-pointer">
@@ -57,14 +57,14 @@
 @endsection
 @section('content') 
 {{-- Slider --}}
-<div class="sm:flex sm:flex-col md:flex-row hidden justify-around sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl mx-auto py-10">
+<div class="sm:flex sm:flex-col md:flex-row hidden justify-around md:justify-center sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl mx-auto py-10">
     <div class=" w-2/3 sm:w-full h-full bg-gray-400 rounded-xl overflow-hidden m-1 ">
         <div class="owl-carousel owl-theme owl-rtl owl-loaded owl-drag relative"> 
                 <img src="{{ asset("images/slider1.png") }}" class="" alt="">
                 <img src="{{ asset("images/slider2.png") }}" class="" alt="">
         </div>
     </div>
-    <div class="w-1/3 bg-gray-300 m-1 h-auto rounded-xl overflow-hidden">
+    <div class="w-1/3 bg-gray-300 m-1 hidden md:inline h-auto rounded-xl overflow-hidden">
         <img src="{{ asset("images/top-banner.png") }}" class="h-full" alt="">
     </div>
 </div>
