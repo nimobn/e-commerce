@@ -1,4 +1,4 @@
-<footer class="flex flex-col divide-y divide-gray-light bg-gray-200">
+<footer class="flex flex-col divide-y divide-gray-light bg-gray-200 mt-10">
     <div class="flex flex-row mt-10 text-xs">
         <div class="w-1/12"></div>
         <div class="w-2/12">
@@ -22,7 +22,7 @@
         <div class="w-4/12">
             <div class="text-custom-black font-bold mb-4">
                 @lang("layout.footer.social media")
-                <div class="flex space-x-3 space-x-reverse text-xl mt-2 mr-3 text-red-500">
+                <div class="grid grid-cols-2 sm:grid-rows-none sm:gap-0 gap-2 sm:flex sm:space-x-3 space-x-0 space-x-reverse text-xl mt-2 mr-3 text-red-500">
                     <a href="#"><i class="fab fa-telegram-plane"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -31,7 +31,7 @@
                 <div class="text-custom-black font-bold mb-4 mt-6">@lang("layout.footer.newsletter")</div>
                 <div>
                     <form action="#">
-                        <input class="shadow appearance-none border rounded w-64 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        <input class="shadow appearance-none border rounded w-3/5 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                          type="text" name="newsletter" placeholder="@lang("layout.footer.news placeholder")">
                         <button type="submit" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
                             @lang("layout.footer.news button")
