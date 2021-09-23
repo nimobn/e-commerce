@@ -17,5 +17,8 @@
         "postcss": "^8.3.6",
         "tailwindcss": "^2.2.15",
         "tailwindcss-rtl": "^0.7.3"
+    },
+    "dependencies": {
+        "magnify": "^2.3.3"
     }
 }
