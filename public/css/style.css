@@ -74,3 +74,15 @@
 .owl-theme .owl-dots .owl-dot span{
   margin: 5px 3px;
 }
+
+/* Style for toggle */
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #48bb78;
+}
+
+/* Shrink the lens to half size
+.magnify > .magnify-lens {
+  width: 300px;
+  height: 300px;
+} */

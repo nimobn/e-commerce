@@ -79,7 +79,7 @@
                             <li class="text-custom-red text-xl"><span class="text-custom-black text-sm">اندازه: 6.5 اینچ</span></li>
                             <li class="text-custom-red text-xl"><span class="text-custom-black text-sm">شبکه های ارتباطی:4G، 3G، 2G</span></li>
                         </ul>
-                        <a href="#" class="text-custom-red mr-1 broder-b border-dashed border-custom-red">مشاهده بیشتر <i class="text-xs far fa-plus"></i></a>
+                        <a href="#" class="text-custom-red mr-1 border-b border-dashed border-custom-red py-1.5">مشاهده بیشتر <i class="text-xs far fa-plus"></i></a>
                     </div>
                 </div>
             
@@ -333,11 +333,13 @@
 
 @section("script")
 <script>
-    // $(document).ready(function() {
-    //     $('.zoom').magnify({
-    //         speed: 200
-    //     });
-    // });
+    $(document).ready(function() {
+        $('.zoom').magnify({
+            speed: 200,
+            // magnifiedWidth	: 400,
+            
+        });
+    });
 
     let tabsContainer = document.querySelector("#tabs");
 

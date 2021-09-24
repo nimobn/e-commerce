@@ -17,5 +17,9 @@ Route::get('/', [LandingController::class, 'index'])->name('landing');
 
 
 Route::get("/product", function(){
-    return view("app.product");
+    return view("app.products.product");
+});
+
+Route::get("/specials", function(){
+    return view("app.products.special");
 });
