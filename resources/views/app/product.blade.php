@@ -1,4 +1,9 @@
 @extends("layouts.app")
+@section('head')
+<link rel="stylesheet" href="{{ asset("css/slider/owl.carousel.min.css") }}">
+<link rel="stylesheet" href="{{ asset("css/slider/owl.theme.green.min.css") }}">
+<link rel="stylesheet" href="{{ asset("css/style.css") }}">
+@endsection
 @section("content")
     {{-- <breadcrumb> --}}
     <div class="mt-6 md:block hidden mr-10">
@@ -119,70 +124,86 @@
         </div>
     </div>
     {{-- </banner> --}}
-    {{-- <similar> --}}
-    <div class="flex flex-col shadow rounded-lg bg-white sm:w-11/12 mx-auto mt-6 text-sm pb-2">
-        <div class="flex px-10 py-8">
-            <div class="md:w-2/12 w-6/12">
-                <span class="border-b border-custom-red pb-4">محصولات مرتبط</span>
+
+    {{-- Similar product slider --}}
+    <div class="flex flex-col justify-between mx-5 md:mx-8 2xl:mx-24 py-5 shadow-md bg-white rounded-md my-20 ">
+        <div class="flex justify-between">
+            <div class="mr-5 pb-5 border-b border-custom-red">
+                <span class="font-yekan font-bold text-sm">محصولات مرتبط</span>
             </div>
-            <div class="text-left border-b border-gray-light pb-4 md:w-10/12 w-6/12">
-                <a href="#" class="bg-custom-blue py-3 px-5 rounded-lg text-white">مشاهده همه <i class="fas fa-chevron-left text-xs"></i></a>
+            <div class="flex-1 text-left mr-5 ml-8 pb-5 border-b border-gray-300">
+                <a href="#" class="text-gray-600 text-xs font-bold font-yekan py-1.5  border-dashed border-b border-gray-400">
+                    <i class="fal fa-plus"></i>
+                    نمایش بیشتر
+                </a>
             </div>
         </div>
-        <div class="md:flex md:grid-cols-none md:gap-0 grid grid-cols-2 gap-5 mt-3 relative">
-            <div class="md:block hidden">
-                <a href="" class="absolute top-10 border border-gray-light shadow-xl rounded-l-lg px-2 py-5"><i class="fas fa-chevron-right"></i></a>
+        <div class="flex flex-row justify-center similar-product-slider owl-carousel owl-theme owl-rtl owl-loaded owl-drag relative"> 
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item border-l border-gray-100 mt-4">
+                        <div class="cursor-pointer flex flex-col w-56  bg-white rounded-lg mx-auto mt-4">
+                            <img src="{{ asset("images/product/p1.jpg") }}" class="px-12 py-3">
+                            <span class="font-yekan text-xs text-gray-600 text-justify px-4 mb-16 leading-6">گوشی موبايل سامسونگ مدل Samsung Galaxy A22 دو سیم کارت</span>
+                            <div class="flex mt-5 mb-2 items-center">
+                                <span class="flex-shrink-0 text-center mx-auto font-yekan text-md text-gray-800 text-bold">۳٫۷۸۰٫۰۰۰ تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item border-l border-gray-100 mt-4">
+                        <div class="cursor-pointer flex flex-col w-56  bg-white rounded-lg mx-auto mt-4">
+                            <img src="{{ asset("images/product/p2.jpg") }}" class="px-12 py-3">
+                            <span class="font-yekan text-xs text-gray-600 text-justify px-4 mb-16 leading-6">گوشی موبايل سامسونگ مدل Samsung Galaxy A22 دو سیم کارت</span>
+                            <div class="flex mt-5 mb-2 items-center">
+                                <span class="flex-shrink-0 text-center mx-auto font-yekan text-md text-gray-800 text-bold">۳٫۷۸۰٫۰۰۰ تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item border-l border-gray-100 mt-4">
+                        <div class="cursor-pointer flex flex-col w-56  bg-white rounded-lg mx-auto mt-4">
+                            <img src="{{ asset("images/product/p3.jpg") }}" class="px-12 py-3">
+                            <span class="font-yekan text-xs text-gray-600 text-justify px-4 mb-16 leading-6">گوشی موبايل سامسونگ مدل Samsung Galaxy A22 دو سیم کارت</span>
+                            <div class="flex mt-5 mb-2 items-center">
+                                <span class="flex-shrink-0 text-center mx-auto font-yekan text-md text-gray-800 text-bold">۳٫۷۸۰٫۰۰۰ تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item border-l border-gray-100 mt-4">
+                        <div class="cursor-pointer flex flex-col w-56  bg-white rounded-lg mx-auto mt-4">
+                            <img src="{{ asset("images/product/p4.jpg") }}" class="px-12 py-3">
+                            <span class="font-yekan text-xs text-gray-600 text-justify px-4 mb-16 leading-6">گوشی موبايل سامسونگ مدل Samsung Galaxy A22 دو سیم کارت</span>
+                            <div class="flex mt-5 mb-2 items-center">
+                                <span class="flex-shrink-0 text-center mx-auto font-yekan text-md text-gray-800 text-bold">۳٫۷۸۰٫۰۰۰ تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item border-l border-gray-100 mt-4">
+                        <div class="cursor-pointer flex flex-col w-56  bg-white rounded-lg mx-auto mt-4">
+                            <img src="{{ asset("images/product/p5.jpg") }}" class="px-12 py-3">
+                            <span class="font-yekan text-xs text-gray-600 text-justify px-4 mb-16 leading-6">گوشی موبايل سامسونگ مدل Samsung Galaxy A22 دو سیم کارت</span>
+                            <div class="flex mt-5 mb-2 items-center">
+                                <span class="flex-shrink-0 text-center mx-auto font-yekan text-md text-gray-800 text-bold">۳٫۷۸۰٫۰۰۰ تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item border-l border-gray-100 mt-4">
+                        <div class="cursor-pointer flex flex-col w-56  bg-white rounded-lg mx-auto mt-4">
+                            <img src="{{ asset("images/product/p3.jpg") }}" class="px-12 py-3">
+                            <span class="font-yekan text-xs text-gray-600 text-justify px-4 mb-16 leading-6">گوشی موبايل سامسونگ مدل Samsung Galaxy A22 دو سیم کارت</span>
+                            <div class="flex mt-5 mb-2 items-center">
+                                <span class="flex-shrink-0 text-center mx-auto font-yekan text-md text-gray-800 text-bold">۳٫۷۸۰٫۰۰۰ تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="md:w-1/4 border-l border-gray-200 px-2 pb-6 pr-4">
-                <div class="flex justify-center">
-                    <a href="#"><img src="{{ asset('images/sim1.jpg') }}" class="w-32 h-28" alt="similar"></a>
-                </div>
-                <div class="text-custom-black text-xs mt-2">
-                    <a href="#">گوشی موبایل شیائومی مدل Redmi 9A M2006C3LG دو سیم‌ کارت ظرفیت 32 گیگابایت</a>
-                </div>
-                <div class="mt-9 text-xs text-custom-black font-bold text-center">
-                    175,000,000 تومان
-                </div>
-            </div>
-            <div class="md:w-1/4 border-l border-gray-200 px-2 pb-6 pr-4">
-                <div class="flex justify-center">
-                    <a href="#"><img src="{{ asset('images/sim2.jpg') }}" class="w-32 h-28" alt="similar"></a>
-                </div>
-                <div class="text-custom-black text-xs mt-2">
-                    <a href="#">گوشی موبایل شیائومی مدل Redmi 9A M2006C3LG دو سیم‌ کارت ظرفیت 32 گیگابایت</a>
-                </div>
-                <div class="mt-9 text-xs text-custom-black font-bold text-center">
-                    175,000,000 تومان
-                </div>
-            </div>
-            <div class="md:w-1/4 border-l border-gray-200 px-2 pb-6 pr-4">
-                <div class="flex justify-center">
-                    <a href="#"><img src="{{ asset('images/sim3.jpg') }}" class="w-32 h-28" alt="similar"></a>
-                </div>
-                <div class="text-custom-black text-xs mt-2">
-                    <a href="#">گوشی موبایل شیائومی مدل Redmi 9A M2006C3LG دو سیم‌ کارت ظرفیت 32 گیگابایت</a>
-                </div>
-                <div class="mt-9 text-xs text-custom-black font-bold text-center">
-                    175,000,000 تومان
-                </div>
-            </div>
-            <div class="md:w-1/4 border-l border-gray-200 px-2 pb-6 pr-4">
-                <div class="flex justify-center">
-                    <a href="#"><img src="{{ asset('images/sim4.jpg') }}" class="w-32 h-28" alt="similar"></a>
-                </div>
-                <div class="text-custom-black text-xs mt-2">
-                    <a href="#">گوشی موبایل شیائومی مدل Redmi 9A M2006C3LG دو سیم‌ کارت ظرفیت 32 گیگابایت</a>
-                </div>
-                <div class="mt-9 text-xs text-custom-black font-bold text-center">
-                    175,000,000 تومان
-                </div>
-            </div>
-            <div class="md:block hidden">
-                <a href="" class="absolute left-0 top-10 border border-gray-light shadow-xl rounded-r-lg px-2 py-5"><i class="fas fa-chevron-left"></i></a>
+            <div class="owl-nav">
+                <div class="owl-prev similar-product-custom-prev custom-prev disabled">prev</div>
+                <div class="owl-next similar-product-custom-next custom-next">next</div>
             </div>
         </div>
     </div>
-    {{-- </similar> --}}
+    {{-- End of similar product slider --}}
     {{-- <product details and comments> --}}
     <div class="mt-6 sm:w-11/12 mx-auto shadow text-sm">
         <div class="border-b rounded-t-lg">
@@ -370,5 +391,76 @@
         element.classList.add("border-t", "border-r", "border-l", "-mb-px", "bg-white", "text-custom-red");
     });
     });
-    </script>
+</script>
+
+<script src="{{ asset("js/owl.carousel.min.js") }}"></script>
+<script>    
+    let similarProduct = $('.similar-product-slider');
+    similarProduct.owlCarousel({
+        rtl:true,
+        center:false,
+        dots:false,
+        items:1,
+        responsiveClass:true,
+        responsive:{
+            600:{
+                items:2,
+                dots:false,
+                autoplay:false,
+                autoplayTimeout:3000,
+                autoplayHoverPause:true,
+            },
+            768:{
+                items:3,
+                dots:false,
+                autoplay:false,
+                autoplayTimeout:3000,
+                autoplayHoverPause:true,
+            },
+            1050:{
+                items:4,
+                dots:false,
+                autoplay:false,
+                autoplayTimeout:3000,
+                autoplayHoverPause:true,
+            },
+            1360:{
+                items:5,
+                dots:false,
+                autoplay:false,
+                autoplayTimeout:3000,
+                autoplayHoverPause:true,
+            },
+        }
+    });
+    similarProduct.on('changed.owl.carousel', function(property) {
+        if( property.item.index == 0 ){
+            $(property.target).find(".similar-product-custom-prev").addClass('disabled');
+            $(property.target).find(".similar-product-custom-next").removeClass('disabled');
+
+        }else{
+            let currnetel = property.item.index + property.page.size;
+        // last element
+            if( currnetel ==  property.item.count ){
+            $(property.target).find(".similar-product-custom-next").addClass('disabled');
+                $(property.target).find(".similar-product-custom-prev").removeClass('disabled');
+            }else{
+                $(property.target).find(".similar-product-custom-next").removeClass('disabled');
+                $(property.target).find(".similar-product-custom-prev").removeClass('disabled');
+            }
+            }
+    })
+
+
+    $('.similar-product-custom-prev').click(function() {
+        similarProduct.trigger('prev.owl.carousel');
+    });
+    $('.similar-product-custom-next').click(function() {
+        similarProduct.trigger('next.owl.carousel');
+    });
+
+    $('.owl-prev').html("<i class='far fa-angle-right'></i>");
+    $('.owl-next').html("<i class='far fa-angle-left'></i>");
+</script>
+
 @endsection

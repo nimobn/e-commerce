@@ -16,6 +16,11 @@ use App\Http\Controllers\LandingController;
 Route::get('/', [LandingController::class, 'index'])->name('landing');
 
 
+Route::get("/login", function(){
+    return view("app.login");
+});
+
+
 Route::get("/product", function(){
     return view("app.product");
 });
