@@ -6,7 +6,7 @@
         <div class="w-3/6 mx-auto pt-2 text-sm">فروشگاه اینترنتی</div>
     </div>
     <div class="w-8/12 relative">
-        <div class="w-6/12 mx-auto mt-2 relative">
+        <div class="w-6/12 mx-auto mt-2 relative z-10">
                 <input type="text" placeholder="@lang("layout.header.search_placeholder")" class="bg-gray-100 p-3 pr-4 placeholder-gray-400 border border-gray-200 focus:ring-1 focus:ring-blue-300 focus:outline-none rounded-lg w-full text-xs text-gray-600"  name="search" id="">
                 <i class="fal fa-search absolute left-3 top-3 text-xl text-gray-400 pr-2 border-r border-gray-300" ></i>
         </div>

@@ -339,7 +339,7 @@
                                 </div>
                             </div>
                             <div class="w-5/6 mx-auto text-center mt-3">
-                                <button class="mx-auto border rounded-lg text-center bg-custom-green hover:bg-green-500 px-16 py-2 text-white" type="submit">
+                                <button class="modal-open mx-auto border rounded-lg text-center bg-custom-green hover:bg-green-500 px-16 py-2 text-white" type="submit">
                                     افزودن نظر جدید
                                 </button>
                             </div>
@@ -350,15 +350,48 @@
         </div>
     </div>
     {{-- </product details> --}}
+    
+
+    <style>
+
+        
+.mbsc-padding.md-header {
+    font-size: 1.25em;
+    font-weight: 400;
+    padding: .8em .8em .4em .8em;
+}
+
+.md-dateslider .mbsc-padding {
+    text-align: center;
+}
+
+.md-check-cont {
+    padding: 8px 0 16px 0;
+}
+
+.md-check {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    font-size: 26px;
+    padding: .2em;
+    line-height: 23px;
+    border-radius: 33px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+    </style>  
+    
+
+    <x-commentmodal />
+
 @endsection
 
 @section("script")
 <script>
     $(document).ready(function() {
         $('.zoom').magnify({
-            speed: 200,
-            // magnifiedWidth	: 400,
-            
+            speed: 200
         });
     });
 
@@ -394,7 +427,6 @@
     });
     });
 </script>
-
 <script src="{{ asset("js/owl.carousel.min.js") }}"></script>
 <script>    
     let similarProduct = $('.similar-product-slider');
@@ -464,5 +496,4 @@
     $('.owl-prev').html("<i class='far fa-angle-right'></i>");
     $('.owl-next').html("<i class='far fa-angle-left'></i>");
 </script>
-
 @endsection
