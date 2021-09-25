@@ -1,2 +1,5 @@
 require('./bootstrap');
 require("magnify");
+import Alpine from 'alpinejs'
+window.Alpine = Alpine
+Alpine.start()

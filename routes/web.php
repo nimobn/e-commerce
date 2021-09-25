@@ -29,6 +29,10 @@ Route::get("/contact-us", function(){
     return view("app.contact-us");
 });
 
+Route::get("/faq", function(){
+    return view("app.faq");
+});
+
 Route::get("/specials", function(){
     return view("app.products.special");
 });
