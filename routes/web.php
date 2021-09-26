@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +33,5 @@ Route::get("/contact-us", function(){
 Route::get("/specials", function(){
     return view("app.products.special");
 });
+
+Route::get("/user/info", [UserController::class, 'index'])->name("user.info");
