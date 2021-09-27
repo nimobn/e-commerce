@@ -38,6 +38,10 @@ Route::get("/about-us", function(){
     return view("app.about-us");
 });
 
+Route::get("/cart", function(){
+    return view("app.cart");
+});
+
 Route::get("/specials", function(){
     return view("app.products.special");
 });
