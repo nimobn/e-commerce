@@ -43,3 +43,8 @@ Route::get("/specials", function(){
 });
 
 Route::get("/user/info", [UserController::class, 'index'])->name("user.info");
+Route::get("/user/orders", [UserController::class, 'orders'])->name("user.orders");
+Route::get("/user/address", [UserController::class, 'address'])->name("user.address");
+Route::get("/user/address/add", [UserController::class, 'newAddress'])->name("user.newAddress");
+Route::get("/user/lists", [UserController::class, 'lists'])->name("user.lists");
+Route::get("/user/referal", [UserController::class, 'referal'])->name("user.referal");

@@ -1,22 +1,55 @@
 @extends("layouts.app")
 
 @section("content")
+@php
+    $route_name = Route::current()->getName();
+@endphp
     <div class="w-10/12 mx-auto bg-white rounded mt-12 py-4 shadow-sm">
         <ul class="hidden md:flex text-sm font-bold">
             <li class="mr-3 border-l">
-              <a class="inline-block py-1 px-4 text-custom-red" href="#">اطلاعات کاربری</a>
+              <a @class([
+                    "inline-block",
+                    "py-1",
+                    "px-4",
+                    "text-custom-red" => $route_name == "user.info",
+                    "text-custom-black" => $route_name != "user.info",
+                    "hover:text-custom-red" => $route_name != "user.info"]) href="#">اطلاعات کاربری</a>
             </li>
             <li class="mr-3 border-l">
-              <a class="inline-block py-1 px-4 hover:text-custom-red text-custom-black" href="#">سفارشات من</a>
+              <a @class([
+                    "inline-block",
+                    "py-1",
+                    "px-4",
+                    "text-custom-red" => $route_name == "user.orders",
+                    "text-custom-black" => $route_name != "user.orders",
+                    "hover:text-custom-red" => $route_name != "user.orders"]) href="#">سفارشات من</a>
             </li>
             <li class="mr-3 border-l">
-                <a class="inline-block py-1 px-4 hover:text-custom-red text-custom-black" href="#">آدرس های من</a>
+                <a @class([
+                    "inline-block",
+                    "py-1",
+                    "px-4",
+                    "text-custom-red" => $route_name == "user.address",
+                    "text-custom-black" => $route_name != "user.address",
+                    "hover:text-custom-red" => $route_name != "user.address"]) href="#">آدرس های من</a>
             </li>
             <li class="mr-3 border-l">
-                <a class="inline-block py-1 px-4 hover:text-custom-red text-custom-black" href="#">لیست ها</a>
+                <a @class([
+                    "inline-block",
+                    "py-1",
+                    "px-4",
+                    "text-custom-red" => $route_name == "user.lists",
+                    "text-custom-black" => $route_name != "user.lists",
+                    "hover:text-custom-red" => $route_name != "user.lists"]) href="#">لیست ها</a>
             </li>
             <li class="mr-3">
-                <a class="inline-block py-1 px-4 hover:text-custom-red text-custom-black" href="#">دعوت از دوستان</a>
+                <a @class([
+                    "inline-block",
+                    "py-1",
+                    "px-4",
+                    "text-custom-red" => $route_name == "user.referal",
+                    "text-custom-black" => $route_name != "user.referal",
+                    "hover:text-custom-red" => $route_name != "user.referal"]) href="#">دعوت از دوستان</a>
             </li>
         </ul>
 

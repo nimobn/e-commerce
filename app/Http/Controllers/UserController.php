@@ -16,6 +16,30 @@ class UserController extends Controller
         return view("app.user.profile")->with(['page' => 'information']);
     }
 
+    public function orders()
+    {
+        return view('app.user.profile')->with(['page' => 'orders']);
+    }
+
+    public function address()
+    {
+        return view('app.user.profile')->with(['page' => 'address']);
+    }
+
+    public function lists()
+    {
+        return view('app.user.profile')->with(['page' => 'favorite']);
+    }
+
+    public function referal()
+    {
+        return view('app.user.profile')->with(['page' => 'referal']);
+    }
+
+    public function newAddress()
+    {
+        return view('app.user.newAddress');
+    }
     /**
      * Show the form for creating a new resource.
      *
