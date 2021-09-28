@@ -4,7 +4,7 @@
 @endsection
 @section('content') 
 
-<div class="flex flex-col items-start  justify-between sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-2xl  mx-auto pb-5 my-10 ">
+<div class="flex flex-col items-start  justify-between sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl  mx-auto pb-5 my-10 ">
     <div class="flex items-start justify-between w-full border-b border-gray-300 mb-4">
         <span class="font-yekan font-bold text-sm border-b-4 border-custom-red text-custom-red px-8 py-2">سبد خرید <span class="rounded-full px-2 py-0.5  bg-custom-red text-white">۲</span></span>
     </div>
