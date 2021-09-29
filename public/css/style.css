@@ -163,7 +163,7 @@ input:checked ~ .dot {
     white-space: nowrap;
 }
 
-#payment-title::before{
+.payment-title::before{
     content: "پرداخت";
     font-size: 0.8rem;
     font-weight: bold;
@@ -171,8 +171,17 @@ input:checked ~ .dot {
     top: -25px;
     white-space: nowrap;
 }
+.payment-title-blue::before{
+    content: "پرداخت";
+    color: rgba(96, 165, 250,1);
+    font-size: 0.8rem;
+    font-weight: bold;
+    position: absolute;
+    top: -25px;
+    white-space: nowrap;
+}
 
-#finish-title::before{
+.finish-title::before{
     content: "اتمام خرید و ارسال";
     font-size: 0.8rem;
     font-weight: bold;

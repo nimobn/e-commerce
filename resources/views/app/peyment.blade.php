@@ -9,9 +9,9 @@
             <div class="flex w-full justify-between items-center mx-auto text-gray-500">
                 <span class="flex justify-center items-center rounded-full p-2.5 bg-blue-400 relative post-title"></span>
                 <span class="flex justify-center items-center  flex-1 bg-blue-400" style="height: 4px"></span>
-                <span class="flex justify-center items-center rounded-full p-2.5 bg-blue-400 relative" id="payment-title"></span>
+                <span class="flex justify-center items-center rounded-full p-2.5 bg-blue-400 relative payment-title-blue"></span>
                 <span class="flex justify-center items-center flex-1 bg-gray-300" style="height: 4px"></span>
-                <span class="flex justify-center items-center rounded-full p-2.5 bg-gray-300 relative" id="finish-title"></span>
+                <span class="flex justify-center items-center rounded-full p-2.5 bg-gray-300 relative finish-title"></span>
             </div>
         </div>
         <div class="flex flex-col flex-shrink-0 items-center w-full lg:w-80 justify-between mx-2 lg:mr-2 lg:ml-0">
