@@ -46,6 +46,10 @@ Route::get("/shipping", function(){
     return view("app.shipping");
 });
 
+Route::get("/payment", function(){
+    return view("app.peyment");
+});
+
 Route::get("/specials", function(){
     return view("app.products.special");
 });
