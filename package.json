@@ -19,6 +19,7 @@
         "tailwindcss-rtl": "^0.7.3"
     },
     "dependencies": {
+        "@tailwindcss/forms": "^0.3.4",
         "alpinejs": "^3.4.1",
         "magnify": "^2.3.3"
     }
