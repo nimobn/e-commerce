@@ -15,5 +15,22 @@ return [
         'Info'      =>  "توجه",
         'Warning'   =>  "اخطار",
         'Error'     =>  "خطا"
+    ],
+
+    'sidebar'  => [
+        'dashboard' => 'داشبورد',
+        'forms' => 'فرم ها',
+        'tables' => 'جدول ها',
+        'elements' => 'عناصر رابط کاربری'
+    ],
+
+    'forms' =>[
+        'color form' =>[
+            'colors' => 'مدیریت رنگ ها',
+            'color name' => 'نام رنگ',
+            'color code' => 'کد رنگ',
+            'active' => 'فعال',
+            'save' => 'ذخیره'
+        ]
     ]
 ];
