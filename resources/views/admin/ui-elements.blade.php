@@ -17,7 +17,7 @@
                     
                     <div class="-mx-3 py-2 px-4">
                         <div class="mx-3">
-                            <span class="text-green-500 font-semibold">Success</span>
+                            <span class="text-green-500 font-semibold">@lang("admin.alert.Success")</span>
                             <p class="text-gray-600 text-sm">Your account was registered!</p>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                     
                     <div class="-mx-3 py-2 px-4">
                         <div class="mx-3">
-                            <span class="text-blue-500 font-semibold">Info</span>
+                            <span class="text-blue-500 font-semibold">@lang("admin.alert.Info")</span>
                             <p class="text-gray-600 text-sm">This channel archived by owner !</p>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                     
                     <div class="-mx-3 py-2 px-4">
                         <div class="mx-3">
-                            <span class="text-yellow-500 font-semibold">Warning</span>
+                            <span class="text-yellow-500 font-semibold">@lang("admin.alert.Warning")</span>
                             <p class="text-gray-600 text-sm">Your image size is to large !</p>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                     
                     <div class="-mx-3 py-2 px-4">
                         <div class="mx-3">
-                            <span class="text-red-500 font-semibold">Error</span>
+                            <span class="text-red-500 font-semibold">@lang("admin.alert.Error")</span>
                             <p class="text-gray-600 text-sm">Your email is already used!</p>
                         </div>
                     </div>

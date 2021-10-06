@@ -9,14 +9,14 @@
 
         {{-- <meta name="description" content="{{ $page->description }}"> --}}
 
-        <title>test</title>
+        <title>@yield("title")</title>
         
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
         <script src="{{ asset("js/jquery-3.6.0.min.js") }}"></script>
         <script src="{{ asset("js/app.js") }}"></script>
     </head>
-    <body dir="rtl">
+    <body dir="rtl" class="font-yekan">
         <div x-data="{ sidebarOpen: false }" class="flex h-screen bg-gray-200 font-roboto">
             @include('admin._layouts.sidebar')
             
