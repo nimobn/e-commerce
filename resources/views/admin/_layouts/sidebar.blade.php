@@ -36,8 +36,7 @@
 
         <ul class="nav">
             <li>
-                <a class="expander flex items-center mt-1 py-2 px-6 text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100" href="/admin">
-                    
+                <a class="expander flex items-center mt-1 py-2 px-6 text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100" href="/admin">                
                     <i class="far fa-file-edit text-xl"></i>
                     <span class="mx-3">@lang("admin.sidebar.forms")</span>
                 </a>
@@ -47,9 +46,17 @@
                     <li class="text-sm px-6 py-2"><a href="#">فرم سوم</a></li>
                 </ul>
             </li>
-          </ul>
+        </ul>
 
-        <x-admin-menu-item icon="edit" lang-key="feature" />
+        <x-admin-menu-item icon="edit" lang-key="forms"
+            :sub-items="[
+                ['text' => 'فرم اول', 'href' => '1'],
+                ['text' => 'فرم دوم', 'href' => '2'],
+                ['text' =>  'فرم سوم', 'href' => '3']
+            ]" 
+        />
+
+        <x-admin-menu-item icon="edit" lang-key="feature" has-sub-menu="false" />
     </nav>
 </div>
 
