@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\UserController;
-
+use App\Http\Controllers\ColorController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -60,23 +60,3 @@ Route::get("/user/address", [UserController::class, 'address'])->name("user.addr
 Route::get("/user/address/add", [UserController::class, 'newAddress'])->name("user.newAddress");
 Route::get("/user/lists", [UserController::class, 'lists'])->name("user.lists");
 Route::get("/user/referal", [UserController::class, 'referal'])->name("user.referal");
-
-Route::get("/admin/tables", function(){
-    return view('admin.tables');
-});
-
-Route::get("/admin/login", function(){
-    return view('admin.login');
-});
-
-Route::get("/admin", function(){
-    return view('admin.index');
-});
-
-Route::get("/admin/forms", function(){
-    return view('admin.forms');
-});
-
-Route::get("/admin/elem", function(){
-    return view('admin.ui-elements');
-});

@@ -27,7 +27,7 @@ return [
 
     'forms' =>[
         'color form' =>[
-            'colors' => 'مدیریت رنگ ها',
+            'add color' => 'افزودن رنگ جدید',
             'color name' => 'نام رنگ',
             'color code' => 'کد رنگ',
             'active' => 'فعال',

@@ -16,13 +16,15 @@ class AdminMenuItem extends Component
     public $sub_items;
     public $has_sub_menu;
     public $href;
-    public function __construct($icon, $langKey, $subItems=null, $href="#", $hasSubMenu = true)
+    public $item_url;
+    public function __construct($icon, $langKey, $subItems=null, $href="#", $hasSubMenu = true, $itemUrl=null)
     {
         $this->icon = $icon;
         $this->lang_key = $langKey;
         $this->sub_items = $subItems;
         $this->has_sub_menu = filter_var($hasSubMenu, FILTER_VALIDATE_BOOLEAN); 
         $this->href= $href;
+        $this->item_url= $itemUrl;
     }
 
     /**
