@@ -13,7 +13,7 @@
     </div>
 
     <nav class="mt-10">
-        <a class="flex items-center mt-4 py-2 px-6 bg-gray-700 bg-opacity-25 text-gray-100" href="/admin/index">
+        <a class="flex items-center mt-4 py-2 px-6 bg-gray-700 bg-opacity-25 text-gray-100" href="/admin">
             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
@@ -45,5 +45,7 @@
 
             <span class="mx-3">@lang("admin.sidebar.forms")</span>
         </a>
+
+        <x-admin-menu-item icon="edit" lang-key="feature" />
     </nav>
 </div>

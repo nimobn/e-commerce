@@ -12,6 +12,7 @@
         <title>@yield("title")</title>
         
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset("fonts/fontawesome/css/all.css") }}">
 
         <script src="{{ asset("js/jquery-3.6.0.min.js") }}"></script>
         <script src="{{ asset("js/app.js") }}"></script>
