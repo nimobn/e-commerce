@@ -13,6 +13,9 @@ use App\Http\Controllers\admin\ColorController;
 
 Route::get('/forms/colors', [ColorController::class, 'index'])->name('colors');
 
+Route::get('/forms/colors2', [ColorController::class, 'index2'])->name('colors2');
+
+
 
 
 

@@ -16,9 +16,9 @@
         @if ($has_sub_menu)
             <ul @class(["hidden" => !Illuminate\Support\Str::contains(url()->current(), $item_url), "nav", "text-gray-300"])>        
                 @for ($i=0; $i<count($sub_items)-1; $i++)
-                    <li class="hover:bg-gray-700 text-sm pr-10 py-2"><a class="flex items-center" href="{{$sub_items[$i]['href']}}"><i class="fas fa-angle-left ml-2"></i>{{$sub_items[$i]['text']}}</a></li>
+                    <li @class(["bg-white" => ($sub_items[$i]['href'] == url()->current()), "hover:bg-gray-700", "text-sm", "pr-10", "py-2" ])><a class="flex items-center" href="{{$sub_items[$i]['href']}}"><i class="fas fa-angle-left ml-2"></i>{{$sub_items[$i]['text']}}</a></li>
                 @endfor
-                <li class="hover:bg-gray-700 text-sm pr-10 py-2"><a class="flex items-center" href="#{{$sub_items[$i]['href']}}"><i class="fas fa-angle-left ml-2"></i>{{$sub_items[$i]['text']}}</a></li>
+                <li @class(["bg-white" => ($sub_items[$i]['href'] == url()->current()), "hover:bg-gray-700", "text-sm", "pr-10", "py-2" ])><a class="flex items-center" href="{{$sub_items[$i]['href']}}"><i class="fas fa-angle-left ml-2"></i>{{$sub_items[$i]['text']}}</a></li>
             </ul>
         @endif
     </li>

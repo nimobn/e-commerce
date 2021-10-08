@@ -10,4 +10,8 @@ class ColorController extends Controller
     public function index(){
         return view('admin.color');
     }
+
+    public function index2(){
+        return view('admin.color');
+    }
 }
