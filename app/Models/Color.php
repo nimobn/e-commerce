@@ -10,4 +10,9 @@ use Jenssegers\Mongodb\Eloquent\SoftDeletes;
 class Color extends Model
 {
     use HasFactory, softDeletes;
+    protected $fillable = [
+        'color_name',
+        'color_code',
+        'is_active',
+    ];
 }

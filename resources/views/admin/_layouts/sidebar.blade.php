@@ -17,14 +17,14 @@
         <x-admin-menu-item icon="fas fa-grip-horizontal" lang-key="elements" has-sub-menu="false" href="/admin/elem" />
         <x-admin-menu-item icon="fal fa-table" lang-key="tables"
         :sub-items="[
-            ['text' => 'جدول 1', 'href' => '1'],
+            ['text' => 'جدول 1', 'href' => '/admin/tables'],
             ['text' => 'جدول 2', 'href' => '2'],
             ['text' =>  'جدول 3', 'href' => '3']
         ]" 
         />
         <x-admin-menu-item icon="far fa-file-edit" lang-key="forms" item-url="forms"
-            :sub-items="[['text' => 'رنگ ها', 'href' => route('admin.colors') ],
-            ['text' => '2رنگ ها', 'href' => route('admin.colors2') ]]"
+            :sub-items="[['text' => 'رنگ ها', 'href' => route('admin.colors.index') ]
+            ]"
         />
         <x-admin-menu-item icon="fad fa-edit" lang-key="feature" has-sub-menu="false" href="#"/>
     </nav>
