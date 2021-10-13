@@ -11,4 +11,7 @@ class Feature extends Model
 {
     use HasFactory, softDeletes;
     
+    protected $fillable = [
+        'category', 'features'
+    ];
 }

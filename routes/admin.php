@@ -1,9 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LandingController;
-use App\Http\Controllers\UserController;
+// use App\Http\Controllers\LandingController;
+// use App\Http\Controllers\UserController;
 use App\Http\Controllers\admin\ColorController;
+use App\Http\Controllers\admin\FeatureController;
+
 /*
 |--------------------------------------------------------------------------
 | Admin Routes
@@ -13,7 +15,16 @@ use App\Http\Controllers\admin\ColorController;
 
 Route::get('/forms/colors', [ColorController::class, 'index'])->name('colors');
 
-Route::get('/forms/colors2', [ColorController::class, 'index2'])->name('colors2');
+
+Route::prefix('features')->name("features.")->group(function () {
+    Route::get('', [FeatureController::class, 'index'])->name('list');
+    Route::get('create', [FeatureController::class, 'create'])->name('create');
+    Route::post('create', [FeatureController::class, "store"])->name("store");
+    Route::get('edit/{feature}', [FeatureController::class, "edit"])->name("edit");
+    Route::patch('edit/{feature}', [FeatureController::class, "update"])->name("update");
+    Route::delete('destroy/{feature}', [FeatureController::class, "destroy"])->name("destroy");
+    Route::delete('destroy/item/{feature}/{item}', [FeatureController::class, "destroyItem"])->name("destroy.item");
+});
 
 
 

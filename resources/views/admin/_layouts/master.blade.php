@@ -10,12 +10,12 @@
         {{-- <meta name="description" content="{{ $page->description }}"> --}}
 
         <title>@yield("title")</title>
+        @livewireStyles
         
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset("fonts/fontawesome/css/all.css") }}">
 
         <script src="{{ asset("js/jquery-3.6.0.min.js") }}"></script>
-        <script src="{{ asset("js/app.js") }}"></script>
     </head>
     <body dir="rtl" class="font-yekan">
         <div x-data="{ sidebarOpen: false }" class="flex h-screen bg-gray-200 font-roboto">
@@ -31,5 +31,7 @@
                 </main>
             </div>
         </div>
+        @livewireScripts
+        <script src="{{ asset("js/app.js") }}"></script>
     </body>
 </html>

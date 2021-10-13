@@ -23,10 +23,9 @@
         ]" 
         />
         <x-admin-menu-item icon="far fa-file-edit" lang-key="forms" item-url="forms"
-            :sub-items="[['text' => 'رنگ ها', 'href' => route('admin.colors') ],
-            ['text' => '2رنگ ها', 'href' => route('admin.colors2') ]]"
+            :sub-items="[['text' => 'رنگ ها', 'href' => route('admin.colors') ]]"
         />
-        <x-admin-menu-item icon="fad fa-edit" lang-key="feature" has-sub-menu="false" href="#"/>
+        <x-admin-menu-item icon="fad fa-edit" lang-key="feature" has-sub-menu="false" href="{{route('admin.features.list')}}"/>
     </nav>
 </div>
 
