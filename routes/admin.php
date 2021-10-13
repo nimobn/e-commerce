@@ -13,18 +13,20 @@ use App\Http\Controllers\admin\FeatureController;
 */
 
 
-Route::get('/forms/colors', [ColorController::class, 'index'])->name('colors');
+Route::resource('/forms/colors', ColorController::class);
 
+Route::delete('features/destroy/item/{feature}/{item}', [FeatureController::class, "destroyItem"])->name("features.destroy.item");
+Route::resource('features', FeatureController::class);
 
-Route::prefix('features')->name("features.")->group(function () {
-    Route::get('', [FeatureController::class, 'index'])->name('list');
-    Route::get('create', [FeatureController::class, 'create'])->name('create');
-    Route::post('create', [FeatureController::class, "store"])->name("store");
-    Route::get('edit/{feature}', [FeatureController::class, "edit"])->name("edit");
-    Route::patch('edit/{feature}', [FeatureController::class, "update"])->name("update");
-    Route::delete('destroy/{feature}', [FeatureController::class, "destroy"])->name("destroy");
-    Route::delete('destroy/item/{feature}/{item}', [FeatureController::class, "destroyItem"])->name("destroy.item");
-});
+// Route::prefix('features')->name("features.")->group(function () {
+//     Route::get('', [FeatureController::class, 'index'])->name('list');
+//     Route::get('create', [FeatureController::class, 'create'])->name('create');
+//     Route::post('', [FeatureController::class, "store"])->name("store");
+//     Route::get('{feature}/edit', [FeatureController::class, "edit"])->name("edit");
+//     Route::patch('{feature}', [FeatureController::class, "update"])->name("update");
+//     Route::delete('{feature}', [FeatureController::class, "destroy"])->name("destroy");
+//     Route::delete('destroy/item/{feature}/{item}', [FeatureController::class, "destroyItem"])->name("destroy.item");
+// });
 
 
 

@@ -31,7 +31,13 @@ return [
             'color name' => 'نام رنگ',
             'color code' => 'کد رنگ',
             'active' => 'فعال',
-            'save' => 'ذخیره'
+            'save' => 'ذخیره',
+            'discard' => 'بازگشت',
+            'color list' => 'لیست رنگ ها',
+            'active' => 'فعال',
+            'inactive' => 'غیرفعال',
+            'edit color' => 'ویرایش رنگ'
+
         ]
     ]
 ];

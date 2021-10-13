@@ -15,8 +15,8 @@ class FeatureController extends Controller
      */
     public function index()
     {
-        $features = Feature::all();
-        return view("admin.feature.list", compact("features"));
+        $features = Feature::orderBy("_id", "DESC")->get();
+        return view("admin.feature.index", compact("features"));
     }
 
     /**
@@ -46,7 +46,7 @@ class FeatureController extends Controller
         $feature->category = $request->input('feature_category');
         $feature->features = $request->input('features');
         $feature->save();
-        return redirect()->route('admin.features.list');
+        return redirect()->route('admin.features.index');
     }
 
     /**
@@ -88,7 +88,7 @@ class FeatureController extends Controller
         $feature->category = $request->input('feature_category');
         $feature->features= $request->input('features');
         $feature->save();
-        return redirect()->route('admin.features.list');
+        return redirect()->route('admin.features.index');
     }
 
     /**
@@ -100,12 +100,12 @@ class FeatureController extends Controller
     public function destroy(Feature $feature)
     {
         $feature->delete();
-        return redirect()->route("admin.features.list");
+        return redirect()->route("admin.features.index");
     }
 
     public function destroyItem(Feature $feature, $item)
     {
         $feature->pull('features', $item);
-        return redirect()->back()->with(['msg' => 'ویژگی با موفقیت حذف شد']);
+        return redirect()->route("admin.features.index")->with(['msg' => 'ویژگی با موفقیت حذف شد']);
     }
 }

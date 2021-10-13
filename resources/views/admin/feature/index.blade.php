@@ -95,7 +95,7 @@
                         <span class="text-xs xs:text-sm text-gray-900">@lang("admin.table.counter", ['from' => 1, "to" => 20, "total" => 50])</span>
 
                         <div class="inline-flex mt-2 xs:mt-0">
-                            <buatton class="text-sm bg-gray-200 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-r border-l border-gray-300">@lang("admin.table.prev btn")</button>
+                            <button class="text-sm bg-gray-200 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-r border-l border-gray-300">@lang("admin.table.prev btn")</button>
                             <button class="text-sm bg-gray-200 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-l">@lang("admin.table.next btn")</button>
                         </div>
                     </div>
