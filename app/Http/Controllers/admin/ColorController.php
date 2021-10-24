@@ -11,7 +11,7 @@ class ColorController extends Controller
 {
     public function index(){
         $colors = Color::paginate(4);
-        return view('admin.colors.index', [
+        return view('admin.color.index', [
             'colors' => $colors
         ]);
     }
@@ -32,7 +32,7 @@ class ColorController extends Controller
 
     public function edit($id){
         $color = Color::find($id);
-        return view('admin.colors.edit', [
+        return view('admin.color.edit', [
             'color' => $color
         ]);
     }

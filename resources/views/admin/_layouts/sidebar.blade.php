@@ -27,6 +27,7 @@
             ]"
         />
         <x-admin-menu-item icon="fad fa-edit" lang-key="feature" has-sub-menu="false" href="{{route('admin.features.index')}}"/>
+        <x-admin-menu-item icon="fad fa-th-large" lang-key="category" has-sub-menu="false" href="{{route('admin.categories.index')}}"/>
     </nav>
 </div>
 

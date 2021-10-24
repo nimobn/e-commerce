@@ -22,7 +22,8 @@ return [
         'forms' => 'فرم ها',
         'tables' => 'جدول ها',
         'elements' => 'عناصر رابط کاربری',
-        'feature'   =>  'ویژگی ها'
+        'feature'   =>  'ویژگی ها',
+        'category' => 'دسته بندی محصولات'
     ],
 
     'forms' =>[

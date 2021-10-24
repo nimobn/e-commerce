@@ -2,14 +2,14 @@
 
 namespace Tests\Feature\Models;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 use App\Models\Color;
 
 class ColorTest extends TestCase
 {
-    // use RefreshDatabase;
+    // use DatabaseMigrations;
     /**
      * A basic feature test example.
      *
